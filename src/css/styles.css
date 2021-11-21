@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell,
+    'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #fafafa;
+  color: #212121;
+  line-height: 1.5;
+  position: relative;
+  padding-right: 0;
+}
+
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.wrapper_search-form {
+  position: fixed;
+  z-index: 10;
+  background-color: #070e72e5;
+  height: 60px;
+  width: 100vw;
+}
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.search-form_input {
+  height: 30px;
+  width: 25%;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border: none;
+}
+
+.search-form_btn {
+  height: 30px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+}
+
+.photo-card {
+  width: 100vw;
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 380px;
+}
+
+.photo-card_img {
+  overflow: hidden;
+  width: 100%;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  text-align: center;
+}
+
+.gallery {
+  padding-top: 65px;
+}
+
+.load-more {
+  display: block;
+  margin-top: 15px;
+  margin: 0 auto;
+  background-color: #070e72e5;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  border-radius: 5%;
+}
+
+.load-more:hover {
+  background-color: #665f5f7c;
+  color: black;
+  border: 2px solid #070e72e5;
+}
+html {
+  scroll-behavior: smooth;
+}
