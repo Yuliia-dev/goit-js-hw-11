@@ -39,7 +39,9 @@ function searchImg(e) {
     .catch(error => {
       loadMoreBth.classList.add('is-hidden');
       galleryEl.innerHTML = '';
-      Notiflix.Notify.failure(`Sorry, ${error.message}. Please try again.`);
+      Notiflix.Notify.failure(
+        `Sorry, there are no images matching your search query. Please try again`,
+      );
     });
 }
 
